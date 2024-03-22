@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container card__info">
+      <h2>Sobre Mi</h2>
+      <p>
+        Soy Luis Hernandez, tengo 26 años, quiero terminar el tsu en
+        informatica, para luego continuar la carrera en ingenieria o seguir
+        aprendiendo mediante cursos o diplomados.
+      </p>
+      <p>Soy un rugbier, amante del café.</p>
+    </section>
+    <section class="container card__info">
+      <h2>Experiencia</h2>
+      <p>
+        He tenido experiencia como desarrollador front-end, soporte tecnico, de
+        forma freelance y agencias para las que he trabajado, me ha tocado
+        colaborar con otros desarrolladores web freelance y me ha tocado apoyar
+        en el soporte tecnico de sitios web de lado del servidor, he instalado
+        paneles de control en servidores vps, con el sistema operativo ubuntu
+        server.
+      </p>
+    </section>
+    <section class="container card__info">
+      <h2>Educación</h2>
+      <p>
+        Curso de html, css en free code camp. Curso de html y css completo en
+        udemy. Curso de javascript, just javascript. Curso de mobile first,
+        platzi.
+      </p>
+    </section>
+    <section class="container card__info">
+      <h2>Contáctanos</h2>
+      <form
+        name="formularioContacto"
+        onsubmit="event.preventDefault(); enviarFormulario();"
+      >
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br />
+        <label for="email">Correo electrónico:</label><br />
+        <input type="text" id="email" name="email" /><br />
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje"></textarea><br />
+        <input class="btn" type="submit" value="Enviar" />
+      </form>
+      <div id="respuestaConfirmacion"></div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

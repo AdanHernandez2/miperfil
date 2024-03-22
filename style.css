@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  body {
+    background: #7f828c;
+    color: #fff;
+    font-family: Roboto;
+    margin: 50px auto;
+  }
+  .container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .card__info {
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #131417;
+  }
+  .card__info:last-of-type {
+    margin-bottom: 0;
+  }
+  .card__info h2 {
+    margin-bottom: 15px;
+    color: #96663d;
+    font-weight: 500;
+  }
+  .card__info p {
+    font-weight: 300;
+  }
+/** formulario **/
+input,
+textarea {
+  flex:1;
+  font-size: 18px;
+  font-family: Roboto;
+  border-radius:5px;
+  padding: 8px;
+  
+}
+
+input:not(.btn),
+textarea {
+  width:100%;
+  display:block;
+}
+
+.btn {
+  background: #d46c11;
+  border: none;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  padding:15px 80px;
+  font-weight:500;
+  font-size:22px;
+  border-radius:8px;
+  cursor: pointer;
+}
+@media (max-width: 420px) { 
+    .card__info h2 {
+        margin-bottom: 15px;
+        color: #d46c11;
+        font-weight: 400;
+      }
+      .card__info p {
+        font-weight: 400;
+      }
+}
+@media (min-width: 768px) { 
+    .card__info h2 {
+        margin-bottom: 15px;
+        color: #556ef7;
+        font-weight: 500;
+      }
+      .card__info p {
+        font-weight: 300;
+      }
+}
+@media (min-width: 1200px) { 
+    .card__info h2 {
+        margin-bottom: 15px;
+        color:#fff;
+        font-weight: 400;
+      }
+      .card__info p {
+        color: #c9a98d;
+        font-weight: 400;
+      }
+}
